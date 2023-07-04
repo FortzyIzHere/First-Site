@@ -307,14 +307,14 @@
             </li>
 
     <!-- Pages dropdown -->
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <strong>Pages</strong>
-      </a>
-      <div class="dropdown-menu custom-dropdown-menu">
-        <p>1</p>
-      </div>
-    </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <strong>Pages</strong>
+              </a>
+              <div class="dropdown-menu custom-dropdown-menu">
+                <p>1</p>
+              </div>
+            </li>
     
     
 
@@ -372,86 +372,145 @@
               </form>
             </div> 
           
-    <!-- Login-Register -->
             <div style="display: flex; justify-content: flex-end; width: 100%;">
-              <input type="checkbox" id="loginPopupToggle" class="popup-toggle" checked>
-              <input type="checkbox" id="registerPopupToggle" class="popup-toggle">
-              <label for="loginPopupToggle">
-                <i class="fas fa-user" style="width: 23px;"></i>
-              </label>  
-              <div class="popup-overlay">
-                <div class="popup-content" style="padding: 48px 16px; width: 570px; height: auto;">
-                  <div class="popup-window" style="position: absolute; top: 70px; right: 15px;">
-                    <label for="loginPopupToggle" class="popup-close"><span>&#10006;</span></label>
-                  </div>
-                  <div>
-                    <button class="log-button active" onclick="openLoginPopup()">Login</button>
-                    <button class="log-button" onclick="openRegisterPopup()">Register</button>
-                  </div>
-                  <hr>
-                  <form id="loginForm" style="padding: 0px 16px;">
-                    <div style="margin: 5px;">
-                      <label class="p-2" for="email"><strong>Email</strong></label><br>
-                      <input type="email" id="email" name="email" style="width: 100%; padding: 5px; border: 1px solid rgba(0, 0, 0, 0.2);"><br>
+    <!-- Login-Register -->
+              <div style="padding: 7px 0px;">
+                <input type="checkbox" id="loginPopupToggle" class="popup-toggle" checked>
+                <input type="checkbox" id="registerPopupToggle" class="popup-toggle">
+                <label for="loginPopupToggle">
+                  <i class="fas fa-user gold" style="width: 23px;"></i>
+                </label>  
+                <div class="popup-overlay">
+                  <div class="popup-content" style="padding: 48px 16px; width: 570px; height: auto;">
+                    <div class="popup-window" style="position: absolute; top: 70px; right: 15px;">
+                      <label for="loginPopupToggle" class="popup-close"><span>&#10006;</span></label>
                     </div>
-                    <div style="margin: 5px;">
-                      <label for="password" style="width: 100%;">
-                        <div class="p-2">
-                          <h6 class="d-inline"><strong>Password</strong></h6>
-                          <a href="#" class="d-inline float-right h-underline" style="color: rgb(188, 172, 118);font-size: 13px; margin-top: 5px; border: 1px solid rgba(0, 0, 0, 0.2);"> Forgot password?</a>
-                        </div>
-                      </label><br>
-                      <input type="password" id="password" name="password" style="width: 100%; padding: 5px; border: 1px solid rgba(0, 0, 0, 0.2);" placeholder="Password" required><br>
+                    <div>
+                      <button class="log-button active" onclick="openLoginPopup()">Login</button>
+                      <button class="log-button" onclick="openRegisterPopup()">Register</button>
                     </div>
-                    <div style="margin: 5px;color: rgba(0, 0, 0, 0.35);">
-                      <input type="checkbox" id="myCheckbox" style="cursor: pointer;">
-                      <label for="myCheckbox" style="cursor: pointer;">
-                        Remember me for 30 days
-                      </label>
-                    </div>
-                    <div style="margin: 5px;">
-                      <button type="submit" class="login-register-button checkbox-check"><strong>LOG IN</strong></button>
-                    </div>
-                  </form>
-                  <form id="registerForm" style="display: none; padding: 0px 16px;">
-                    <p class="text-muted">
-                      The bedding was hardly able to cover it and seemed 
-                      ready to slide off any moment. His many legs, pit.
-                    </p>
-                    <div style="margin: 5px;">
-                      <label class="p-2" for="name"><strong>Name</strong></label><br>
-                      <input type="text" id="name" name="name" style="width: 100%; padding: 5px; border: 1px solid rgba(0, 0, 0, 0.2);"><br>
-                    </div>
-                    <div style="margin: 5px;">
-                      <label class="p-2" for="email"><strong>Email</strong></label><br>
-                      <input type="email" id="email" name="email" style="width: 100%; padding: 5px; border: 1px solid rgba(0, 0, 0, 0.2);"><br>
-                    </div>
-                    <div style="margin: 5px;">
-                      <label for="password" style="width: 100%;">
-                        <div class="p-2">
-                          <h6 class="d-inline"><strong>Password</strong></h6>
-                          <a href="#" class="d-inline float-right h-underline" style="color: rgb(188, 172, 118);font-size: 13px; margin-top: 5px; border: 1px solid rgba(0, 0, 0, 0.2);"> Forgot password?</a>
-                        </div>
-                      </label><br>
-                      <input type="password" id="password" name="password" style="width: 100%; padding: 5px; border: 1px solid rgba(0, 0, 0, 0.2);"><br>
-                    </div>
-                    <div style="margin: 5px;">
-                      <button type="submit" class="login-register-button checkbox-check"><strong>REGISTER</strong></button>
-                    </div>
-                  </form>
                     <hr>
-                    <div class="text-center" style="height: 40px;">
-                      <button class="icon-login-fb" style="width: 40px;" href="#">
-                        <i class="fab fa-facebook" style="height: 100;"></i>
-                      </button>
-                      <button class="icon-login-google" style="width: 40px;" href="#">
-                        <i class="fab fa-google"></i>
-                      </button>
+                    <form id="loginForm" style="padding: 0px 16px;">
+                      <div style="margin: 5px;">
+                        <label class="p-2" for="email"><strong>Email</strong></label><br>
+                        <input type="email" id="email" name="email" style="width: 100%; padding: 5px; border: 1px solid rgba(0, 0, 0, 0.2);"><br>
+                      </div>
+                      <div style="margin: 5px;">
+                        <label for="password" style="width: 100%;">
+                          <div class="p-2">
+                            <h6 class="d-inline"><strong>Password</strong></h6>
+                            <a href="#" class="d-inline float-right h-underline" style="color: rgb(188, 172, 118);font-size: 13px; margin-top: 5px; border: 1px solid rgba(0, 0, 0, 0.2);"> Forgot password?</a>
+                          </div>
+                        </label><br>
+                        <input type="password" id="password" name="password" style="width: 100%; padding: 5px; border: 1px solid rgba(0, 0, 0, 0.2);" placeholder="Password" required><br>
+                      </div>
+                      <div style="margin: 5px;color: rgba(0, 0, 0, 0.35);">
+                        <input type="checkbox" id="myCheckbox" style="cursor: pointer;">
+                        <label for="myCheckbox" style="cursor: pointer;">
+                          Remember me for 30 days
+                        </label>
+                      </div>
+                      <div style="margin: 5px;">
+                        <button type="submit" class="login-register-button checkbox-check"><strong>LOG IN</strong></button>
+                      </div>
+                    </form>
+                    <form id="registerForm" style="display: none; padding: 0px 16px;">
+                      <p class="text-muted">
+                        The bedding was hardly able to cover it and seemed 
+                        ready to slide off any moment. His many legs, pit.
+                      </p>
+                      <div style="margin: 5px;">
+                        <label class="p-2" for="name"><strong>Name</strong></label><br>
+                        <input type="text" id="name" name="name" style="width: 100%; padding: 5px; border: 1px solid rgba(0, 0, 0, 0.2);"><br>
+                      </div>
+                      <div style="margin: 5px;">
+                        <label class="p-2" for="email"><strong>Email</strong></label><br>
+                        <input type="email" id="email" name="email" style="width: 100%; padding: 5px; border: 1px solid rgba(0, 0, 0, 0.2);"><br>
+                      </div>
+                      <div style="margin: 5px;">
+                        <label for="password" style="width: 100%;">
+                          <div class="p-2">
+                            <h6 class="d-inline"><strong>Password</strong></h6>
+                            <a href="#" class="d-inline float-right h-underline" style="color: rgb(188, 172, 118);font-size: 13px; margin-top: 5px; border: 1px solid rgba(0, 0, 0, 0.2);"> Forgot password?</a>
+                          </div>
+                        </label><br>
+                        <input type="password" id="password" name="password" style="width: 100%; padding: 5px; border: 1px solid rgba(0, 0, 0, 0.2);"><br>
+                      </div>
+                      <div style="margin: 5px;">
+                        <button type="submit" class="login-register-button checkbox-check"><strong>REGISTER</strong></button>
+                      </div>
+                    </form>
+                      <hr>
+                      <div class="text-center" style="height: 40px;">
+                        <button class="icon-login-fb" style="width: 40px;" href="#">
+                          <i class="fab fa-facebook" style="height: 100;"></i>
+                        </button>
+                        <button class="icon-login-google" style="width: 40px;" href="#">
+                          <i class="fab fa-google"></i>
+                        </button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            
+              <div style="padding: 7px;">
+                <a href="#" class="gold"><i class="far fa-heart"></i></a>
+              </div>
+              
+              <div style="padding: 7px;">
+                <a onclick="openPopup()" class="gold"><i class="fas fa-shopping-bag"></i></a>
+                <div class="popup-container">
+                  <div class="popup-content">
+                      <button class="close-button" onclick="closePopup()">&#10006;</button>
+                    <div style="padding: 50px 48px 20px 48px;">
                     </div>
+                  </div>
+                </div>
+              </div>
+
+    <!-- Menu -->
+              <div style="padding: 7px;">
+                <a onclick="openPopup()" class="gold"><i class="fas fa-bars"></i></a>
+                <div class="popup-container">
+                  <div class="popup-content">
+                      <button class="close-button" onclick="closePopup()">&#10006;</button>
+                    <div style="padding: 50px 48px 20px 48px;">
+                      <h5 style="margin-bottom: 48px;">
+                        <strong>Varkala</strong>
+                      </h5>
+                      <ul class="list-unstyled" style="margin-bottom: 48px;">
+                        <li>
+                          <a href="#" class="text-muted"><p class="gold">Home</p></a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-muted"><p class="gold">Link</p></a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-muted disabled" style="cursor: default;"><p>Disabled</p></a>
+                        </li>
+                        <li>
+                          <a href="#ex" class="dropdown-toggle gold" data-toggle="collapse" aria-expanded="false" aria-controls="collapseExample">
+                            Dropdown link
+                          </a>
+                          <div class="collapse" id="ex">
+                            <a href="#" class="text-muted"><p class="gold" style="padding: 10px; margin: 0px;">Action</p></a>
+                            <a href="#" class="text-muted"><p class="gold" style="padding: 10px; margin: 0px;">Another Action</p></a>
+                            <a href="#" class="text-muted"><p class="gold" style="padding: 10px; margin: 0px;">Something else here</p></a>
+                          </div>
+                        </li>
+                      </ul>
+                      <div style="display: flex; align-items: center;">
+                        <i class="fab fa-facebook" style="padding: 10px;"></i>
+                        <i class="fab fa-twitter" style="padding: 10px;"></i>
+                        <i class="fas fa-phone" style="padding: 10px;"></i>
+                        <p style="margin: 0;">020-800-456-747</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            
+
         </div>
       </div>
     </nav>

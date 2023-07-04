@@ -98,3 +98,14 @@ function closePopupOutside(event) {
 }
 
 
+
+
+function openPopup() {
+  var popupContainer = document.querySelector('.popup-container');
+  popupContainer.classList.add('popup-show');
+}
+
+function closePopup() {
+  var popupContainer = document.querySelector('.popup-container');
+  popupContainer.classList.remove('popup-show');
+}
