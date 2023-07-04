@@ -456,24 +456,25 @@
               <div style="padding: 7px;">
                 <a href="#" class="gold"><i class="far fa-heart"></i></a>
               </div>
-              
+
               <div style="padding: 7px;">
-                <a onclick="openPopup()" class="gold"><i class="fas fa-shopping-bag"></i></a>
-                <div class="popup-container">
+                <a onclick="openPopup('popup1')" class="gold"><i class="fas fa-shopping-bag"></i></a>
+                <div class="popup-container" id="popup1">
                   <div class="popup-content">
-                      <button class="close-button" onclick="closePopup()">&#10006;</button>
-                    <div style="padding: 50px 48px 20px 48px;">
+                      <button class="close-button" onclick="closePopup('popup1')">&#10006;</button>
+                    <div>
+                      
                     </div>
                   </div>
                 </div>
+
               </div>
 
-    <!-- Menu -->
               <div style="padding: 7px;">
-                <a onclick="openPopup()" class="gold"><i class="fas fa-bars"></i></a>
-                <div class="popup-container">
+                <a onclick="openPopup('popup2')" class="gold"><i class="fas fa-bars"></i></a>
+                <div class="popup-container" id="popup2">
                   <div class="popup-content">
-                      <button class="close-button" onclick="closePopup()">&#10006;</button>
+                      <button class="close-button" onclick="closePopup('popup2')">&#10006;</button>
                     <div style="padding: 50px 48px 20px 48px;">
                       <h5 style="margin-bottom: 48px;">
                         <strong>Varkala</strong>
@@ -505,12 +506,12 @@
                         <i class="fas fa-phone" style="padding: 10px;"></i>
                         <p style="margin: 0;">020-800-456-747</p>
                       </div>
+                      
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
         </div>
       </div>
     </nav>

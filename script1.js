@@ -100,12 +100,12 @@ function closePopupOutside(event) {
 
 
 
-function openPopup() {
-  var popupContainer = document.querySelector('.popup-container');
+function openPopup(popupId) {
+  var popupContainer = document.getElementById(popupId);
   popupContainer.classList.add('popup-show');
 }
 
-function closePopup() {
-  var popupContainer = document.querySelector('.popup-container');
+function closePopup(popupId) {
+  var popupContainer = document.getElementById(popupId);
   popupContainer.classList.remove('popup-show');
 }
